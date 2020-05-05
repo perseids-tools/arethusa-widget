@@ -1,0 +1,4 @@
+[submodule "arethusa"]
+	path = arethusa
+	url = git@github.com:alpheios-project/arethusa.git
+	branch = widget
