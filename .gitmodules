@@ -2,3 +2,6 @@
 	path = arethusa
 	url = git@github.com:alpheios-project/arethusa.git
 	branch = widget
+[submodule "arethusa-configs"]
+	path = arethusa-configs
+	url = git@github.com:alpheios-project/arethusa-configs.git
