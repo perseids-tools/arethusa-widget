@@ -1,0 +1,15 @@
+{
+  "name": "arethusa-widget",
+  "version": "0.0.1",
+  "description": "Arethusa treebank editor embedded widget",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perseids-tools/arethusa-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/perseids-tools/arethusa-widget/issues"
+  },
+  "homepage": "https://github.com/perseids-tools/arethusa-widget",
+  "license": "MIT"
+}
