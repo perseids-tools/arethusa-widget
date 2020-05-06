@@ -23,7 +23,14 @@ or
 
 ## Development
 
-## Setup
+### Requirements
+
+* Node 13.9.0
+* Yarn
+* Docker
+* Docker Compose
+
+### Setup
 
 ```
 git clone --recurse-submodules git@github.com:perseids-tools/arethusa-widget.git
@@ -35,18 +42,30 @@ or if the repository is already initialized
 git pull --recurse-submodules
 ```
 
-## Tests
+then install development dependencies
 
-## Updating libraries
+```
+yarn install
+```
+
+### Tests
+
+### Updating libraries
 
 ```
 git submodule update --remote
 ```
 
-## Publishing
+### Updating GitHub Pages 
 
 ```
-./build.sh
+yarn deploy
+```
+
+### Publishing
+
+```
+yarn build
 npm publish
 ```
 

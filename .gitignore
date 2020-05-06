@@ -2,7 +2,8 @@
 /node_modules
 
 # production
-/build
+/dist
+/demo/index.js
 
 # testing
 /coverage
