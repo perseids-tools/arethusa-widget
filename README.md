@@ -25,14 +25,28 @@ or
 
 ## Setup
 
+```
+git clone --recurse-submodules git@github.com:perseids-tools/arethusa-widget.git
+```
+
+or if the repository is already initialized
+
+```
+git pull --recurse-submodules
+```
+
 ## Tests
 
 ## Updating libraries
 
+```
+git submodule update --remote
+```
+
 ## Publishing
 
 ```
-yarn build
+./build.sh
 npm publish
 ```
 

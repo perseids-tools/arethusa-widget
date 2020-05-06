@@ -1,0 +1,18 @@
+FROM ubuntu:16.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV QT_QPA_PLATFORM=offscreen
+
+RUN apt-get update -qq && apt-get install -qq -y build-essential nodejs-legacy npm git phantomjs ruby-dev
+
+ADD ./arethusa /arethusa
+WORKDIR /arethusa
+
+# Bower does not work correctly when used in a git submodule inside a container
+# To fix this, we pretend it is not a git submodule
+# See https://github.com/bower/bower/issues/1492
+RUN rm /arethusa/.git
+ADD ./.git/modules/arethusa /arethusa/.git
+
+RUN npm install -g grunt-cli bower && npm install
+RUN grunt install && grunt import
