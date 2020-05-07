@@ -3,7 +3,7 @@ const defaultConfig = {
     debug: false,
     showKeys: false,
     chunkParam: 'chunk',
-    auxConfPath: `${process.env.PUBLIC_URL}/arethusa/configs`,
+    auxConfPath: './configs',
     retrievers: {
       TreebankRetriever: {
         resource: 'Gardener',
@@ -34,7 +34,7 @@ const defaultConfig = {
   navbar: false,
   resources: {
     Gardener: {
-      route: `${process.env.PUBLIC_URL}/xml/:doc`,
+      route: ':doc',
       params: [
         'doc',
       ],

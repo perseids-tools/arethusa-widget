@@ -2,7 +2,7 @@ import {
   defaultConfig,
   sidepanelConfig,
   ArethusaWrapper,
-} from '../../dist';
+} from '..';
 
 const wrapper = new ArethusaWrapper({
   elementId: 'treebank_container',
