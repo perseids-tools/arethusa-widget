@@ -11,4 +11,4 @@ cd ..
 
 cp -R arethusa-configs/dist dist/arethusa/configs
 
-cp src/custom.css dist/custom.css
+cp src/widget.css dist/arethusa/css/widget.css
