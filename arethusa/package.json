@@ -1,0 +1,59 @@
+{
+  "name": "arethusa",
+  "version": "0.2.5",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alpheios-project/arethusa.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "express": "^4.10.6",
+    "grunt-express-server": "^0.4.19",
+    "mkdirp": "^0.5.0",
+    "morgan": "^1.5.0",
+    "pretty-data": "^0.40.0",
+    "ejs": "^1.0.0",
+    "mv": "^2.0.3"
+  },
+  "devDependencies": {
+    "bower": "1.3.8",
+    "connect-livereload": "0.4.0",
+    "grunt-angular-templates": "0.5.6",
+    "grunt-cli": "0.1.13",
+    "grunt-concurrent": "0.5.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-cssmin": "1.0.1",
+    "grunt-contrib-jasmine": "0.6.3",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-sass": "0.7.3",
+    "grunt-contrib-uglify": "0.4.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-coveralls": "1.0.1",
+    "grunt-githooks": "^0.3.1",
+    "grunt-karma": "0.8.0",
+    "grunt-newer": "alpheios-project/grunt-newer",
+    "grunt-ngdocs": "alpheios-project/grunt-ngdocs#links_to_source_code",
+    "grunt-protractor-runner": "1.0.0",
+    "grunt-sauce-connect-launcher": "0.3.1",
+    "grunt-shell": "0.7.0",
+    "karma": "0.12.0",
+    "karma-chrome-launcher": "0.1.3",
+    "karma-coverage": "0.2.1",
+    "karma-firefox-launcher": "0.1.3",
+    "karma-jasmine": "0.1.5",
+    "karma-phantomjs-launcher": "0.1.4",
+    "load-grunt-tasks": "^0.6.0",
+    "plato": "^1.2.2",
+    "protractor": "~0.23.1",
+    "shelljs": "^0.3.0",
+    "grunt-bump": "0.0.16"
+  },
+  "scripts": {
+    "spec": "grunt --stack karma:spec",
+    "coveralls": "grunt --stack coveralls",
+    "jshint": "grunt --stack jshint",
+    "test": "npm run spec && npm run coveralls && npm run jshint"
+  }
+}

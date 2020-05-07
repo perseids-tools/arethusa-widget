@@ -1,0 +1,63 @@
+{
+  "name": "arethusa",
+  "version": "0.2.5",
+  "authors": [
+    "Gernot Höflechner",
+    "Christof Sirk",
+    "Robert Lichtensteiner",
+    "Bridget Almas"
+  ],
+  "description": "A backend-independent client-side annotation framework",
+  "keywords": [
+    "annotation"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/alpheios-project/arethusa",
+  "main": [
+    "dist/arethusa_packages.min.js",
+    "dist/arethusa.min.js"
+  ],
+  "ignore": [
+    "app/css",
+    "app/images",
+    "app/static",
+    "app/templates",
+    "hooks",
+    "node_modules",
+    "bower_components",
+    "spec*",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular": "1.2.17",
+    "angular-route": "1.2.17",
+    "angular-resource": "1.2.17",
+    "angular-animate": "1.2.17",
+    "angular-mocks": "1.2.17",
+    "angular-cookies": "1.2.17",
+    "angular-scroll": "0.5.8",
+    "angular-translate": "2.2.0",
+    "angular-translate-loader-static-files": "2.2.0",
+    "foundation": "5.2.2",
+    "d3": "3.4.6",
+    "x2js": "",
+    "angulartics": "0.15.20",
+    "lunr.js": "~0.5.4",
+    "bourbon": "~4.0.2",
+    "jsondiffpatch": "~0.1.8",
+    "oclazyload": "alpheios-project/ocLazyLoad#master",
+    "angular-gridster": "0.10.7",
+    "angular-md": "~1.0.0",
+    "angular-highlightjs": "~0.3.2",
+    "angular-local-storage": "~0.1.5",
+    "angular-uuid2": "",
+    "lodash": "~2.4.1",
+    "stacktrace-js": "~0.6.4",
+    "angular-drag-and-drop-lists": "~1.2.0"
+  },
+  "resolutions": {
+    "angular": "1.2.17",
+    "angular-mocks": "1.2.17"
+  }
+}
