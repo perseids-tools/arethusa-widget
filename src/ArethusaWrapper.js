@@ -10,36 +10,38 @@ const wordsDiffer = (a, b) => {
 };
 
 class ArethusaWrapper {
-  constructor() {
+  constructor({ elementId, remoteUrl, doc }) {
+    this.elementId = elementId;
+    this.remoteUrl = remoteUrl;
+    this.doc = doc
     this.render = this.render.bind(this);
   }
 
-  render({ doc, chunk, remoteUrl, elementId, config, w }) {
+  render({ chunk, config, words }) {
     const { Arethusa, $ } = window;
 
     if (this.widget) {
-      if (this.doc === doc && (this.chunk !== chunk || wordsDiffer(this.w, w))) {
-        this.gotoSentence(chunk, w);
+      if (this.chunk !== chunk || wordsDiffer(this.words, words)) {
+        this.gotoSentence(chunk, words);
         removeToastContainer($);
       }
     } else {
       this.widget = new Arethusa();
 
       this.widget
-        .on(elementId)
-        .from(remoteUrl)
+        .on(this.elementId)
+        .from(this.remoteUrl)
         .with(config)
-        .start({ doc, chunk, w });
+        .start({ doc: this.doc, chunk, w: words });
 
       this.api = this.widget.api();
     }
 
-    this.doc = doc;
     this.chunk = chunk;
-    this.w = w;
+    this.words = words;
   }
 
-  gotoSentence(chunk, words) {
+  gotoSentence({ chunk, words }) {
     return this.api.gotoSentence(chunk, words);
   }
 
@@ -47,16 +49,16 @@ class ArethusaWrapper {
     return this.api.getSubdoc();
   }
 
-  getMorph(sentenceId, wordId) {
-    return this.api.getMorph(sentenceId, wordId);
+  getMorph({ chunk, words }) {
+    return this.api.getMorph(chunk, wordId);
   }
 
   refreshView() {
     return this.api.refreshView();
   }
 
-  findWord(sentenceId, word, prefix, suffix) {
-    return this.api.findWord(sentenceId, word, prefix, suffix);
+  findWord({ chunk, word, prefix, suffix }) {
+    return this.api.findWord(chunk, word, prefix, suffix);
   }
 }
 
