@@ -13,11 +13,12 @@ class ArethusaWrapper {
   constructor({ elementId, remoteUrl, doc }) {
     this.elementId = elementId;
     this.remoteUrl = remoteUrl;
-    this.doc = doc
+    this.doc = doc;
     this.render = this.render.bind(this);
   }
 
   render({ chunk, config, words }) {
+    // eslint-disable-next-line no-undef
     const { Arethusa, $ } = window;
 
     if (this.widget) {
@@ -57,7 +58,9 @@ class ArethusaWrapper {
     return this.api.refreshView();
   }
 
-  findWord({ chunk, word, prefix, suffix }) {
+  findWord({
+    chunk, word, prefix, suffix,
+  }) {
     return this.api.findWord(chunk, word, prefix, suffix);
   }
 }

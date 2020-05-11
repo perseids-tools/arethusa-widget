@@ -18,9 +18,13 @@
     "build-demo": "bash build-demo.sh && webpack --mode production --config webpack.config.demo.js",
     "build": "yarn build-arethusa && yarn build-production && yarn build-demo",
     "demo": "http-server demo",
-    "deploy": "gh-pages -d demo"
+    "deploy": "gh-pages -d demo",
+    "lint": "eslint --ext=js --ext=jsx src"
   },
   "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "gh-pages": "^2.2.0",
     "http-server": "^0.12.3",
     "webpack": "^4.43.0",

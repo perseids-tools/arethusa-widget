@@ -158,6 +158,12 @@ yarn install
 
 ### Tests
 
+### Linting the code
+
+```
+yarn lint
+```
+
 ### Updating libraries
 
 ```

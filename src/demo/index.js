@@ -1,12 +1,11 @@
 import {
   defaultConfig,
-  sidepanelConfig,
   ArethusaWrapper,
 } from '..';
 
 const wrapper = new ArethusaWrapper({
   elementId: 'treebank_container',
-  remoteUrl: `./arethusa`,
+  remoteUrl: './arethusa',
   doc: '/treebank.xml',
 });
 
