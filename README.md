@@ -31,7 +31,7 @@ ln -s path/to/node_modules/arethusa-widget/dist/arethusa ./arethusa
 In the `<head>` of the HTML file on the page that will contain Arethusa
 (or for a single page app, the public HTML page) add the following:
 
-```
+```html
 <script type="text/javascript" src="/public/url/arethusa/arethusa.packages.min.js"></script>
 <script type="text/javascript" src="/public/url/arethusa/arethusa.min.js"></script>
 <script type="text/javascript" src="/public/url/arethusa/arethusa.widget.loader.js"></script>
@@ -118,9 +118,10 @@ wrapper.refreshView();
 // specified sentence and returns a list of matching words
 // See https://github.com/alpheios-project/arethusa/blob/widget/app/js/arethusa.core/services/api.js#L121
 wrapper.findWord({
-  word,
-  prefix,
-  suffix,
+  chunk: '2', // sentence of the treebank to display
+  word: 'χαῖρε', // the word to find
+  prefix: 'ἀλλὰ', // (optional) prefix the preceding word or words
+  suffix: 'ὦ', // (optional) suffix the following word or words
 });
 ```
 

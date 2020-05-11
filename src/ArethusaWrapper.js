@@ -49,7 +49,7 @@ class ArethusaWrapper {
     return this.api.getSubdoc();
   }
 
-  getMorph({ chunk, words }) {
+  getMorph({ chunk, wordId }) {
     return this.api.getMorph(chunk, wordId);
   }
 
