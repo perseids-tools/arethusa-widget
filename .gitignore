@@ -3,7 +3,7 @@
 
 # production
 /dist
-/demo/index.js
+/demo
 
 # testing
 /coverage

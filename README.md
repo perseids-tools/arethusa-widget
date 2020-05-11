@@ -167,7 +167,14 @@ git submodule update --remote
 ### Updating GitHub Pages 
 
 ```
+yarn build
 yarn deploy
+```
+
+To run locally before publishing:
+
+```
+yarn demo
 ```
 
 ### Publishing
