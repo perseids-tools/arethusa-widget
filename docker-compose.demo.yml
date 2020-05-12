@@ -1,0 +1,17 @@
+version: '3'
+services:
+  demo:
+    build:
+      context: .
+      dockerfile: Dockerfile-demo
+    volumes:
+      - .:/arethusa-widget
+    command: yarn demo
+    ports:
+      - 8080:8080
+  backstop:
+    image: backstopjs/backstopjs:5.0.1
+    volumes:
+      - ./test:/src
+    depends_on:
+      - demo

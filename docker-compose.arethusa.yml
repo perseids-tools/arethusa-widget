@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  arethusa:
     build:
       context: .
       dockerfile: Dockerfile-arethusa
@@ -9,6 +9,6 @@ services:
       - ./arethusa/dist:/arethusa/dist
       - ./arethusa/spec:/arethusa/spec
     ports:
-      - "8081:8081"
+      - 8081:8081
     environment:
       - PORT=8081

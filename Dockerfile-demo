@@ -1,0 +1,6 @@
+FROM node:14.2.0
+
+ADD . /arethusa-widget
+WORKDIR /arethusa-widget
+
+RUN yarn install
