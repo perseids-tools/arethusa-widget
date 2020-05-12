@@ -15,6 +15,8 @@ or
 
 `npm install arethusa-widget`
 
+(See project on [npm](https://www.npmjs.com/package/arethusa-widget))
+
 ## How to use
 
 ### Setup
