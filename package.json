@@ -19,9 +19,11 @@
     "build": "yarn build-arethusa && yarn build-production && yarn build-demo",
     "demo": "http-server demo",
     "deploy": "gh-pages -d demo",
+    "test": "bash test.sh",
     "lint": "eslint --ext=js --ext=jsx src"
   },
   "devDependencies": {
+    "backstopjs": "^5.0.1",
     "eslint": "^7.0.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",

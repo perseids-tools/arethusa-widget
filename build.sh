@@ -3,7 +3,7 @@
 rm -r dist/
 
 docker-compose -f docker-compose.arethusa.yml build
-docker-compose -f docker-compose.arethusa.yml run web grunt build
+docker-compose -f docker-compose.arethusa.yml run arethusa grunt build
 
 cd ./arethusa
 bash deploy_widget.sh ../dist/arethusa

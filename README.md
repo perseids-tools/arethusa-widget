@@ -133,7 +133,7 @@ with the equivalent `require`s.)
 
 ### Requirements
 
-* Node 13.9.0
+* Node 14.2.0
 * Yarn
 * Docker
 * Docker Compose
@@ -157,6 +157,11 @@ yarn install
 ```
 
 ### Tests
+
+```
+yarn build
+yarn test
+```
 
 ### Linting the code
 
