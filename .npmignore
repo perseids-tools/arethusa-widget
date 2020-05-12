@@ -29,11 +29,18 @@ demo
 yarn.lock
 
 # git submodules
+.gitmodules
 /arethusa
 /arethusa-configs
 
 # project specific files
 build.sh
+build-demo.sh
+test.sh
+webpack.config.demo.js
+webpack.config.prod.js
 Dockerfile-arethusa
+Dockerfile-demo
 docker-compose.arethusa.yml
+docker-compose.demo.yml
 /demo

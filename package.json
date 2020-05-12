@@ -1,6 +1,6 @@
 {
   "name": "arethusa-widget",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Arethusa treebank editor embedded widget",
   "main": "dist/index.js",
   "repository": {
