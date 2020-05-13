@@ -42,7 +42,7 @@ In the `<head>` of the HTML file on the page that will contain Arethusa
   window.dagred3path = "vendor/dagre-d3/dagre-d3.min.js";
 </script>
 
-<link rel="stylesheet" type="text/css" href="/public/url/arethusa/dist/arethusa.min.css">
+<link rel="stylesheet" type="text/css" href="/public/url/arethusa/css/arethusa.min.css">
 <link rel="stylesheet" type="text/css" href="/public/url/arethusa/css/colorpicker.css">
 <link rel="stylesheet" type="text/css" href="/public/url/arethusa/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/public/url/arethusa/css/foundation-icons.css">
