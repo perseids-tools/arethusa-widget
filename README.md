@@ -192,9 +192,10 @@ yarn demo
 
 ### Publishing
 
-```
-yarn build
-npm publish
-```
-
-(Make sure to update the `version` in `package.json` before publishing a new release.)
+* Update the version in `package.json` according to [SemVer](https://semver.org/)
+* Commit and push to GitHub
+* Add a new release with `v` followed by the version number as the tag and a title of the version preceded by `Release`.
+For example, if the `version` in `package.json` is `2.0.0`, then tag for the release should be `v2.0.0`
+and the title should be `Release v2.0.0`. The description of the release should contain a
+list of changes followed by the commit of the Arethusa and Arethusa Configs repositories.
+* Run `yarn build` and then `npm publish`
