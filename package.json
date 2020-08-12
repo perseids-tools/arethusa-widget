@@ -1,6 +1,6 @@
 {
   "name": "arethusa-widget",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Arethusa treebank editor embedded widget",
   "main": "dist/index.js",
   "repository": {
@@ -20,6 +20,7 @@
     "demo": "http-server demo",
     "deploy": "gh-pages -d demo",
     "test": "bash test.sh",
+    "approve-changes": "bash approve-changes.sh",
     "lint": "eslint --ext=js --ext=jsx src"
   },
   "devDependencies": {
